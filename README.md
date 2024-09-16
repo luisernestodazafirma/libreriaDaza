@@ -15,7 +15,7 @@
 <h3>Tecnologías Utilizadas</h3>
 
 <ul>
-  <p><bold>Frontend</bold></p>
+  <p><b>Frontend</b></p>
   <li>HTML5</li>
   <li>CSS</li>
   <li>JavaScript (con Bootstrap) 😊</li>
@@ -23,18 +23,18 @@
 
 
 <ul>
-  <p><bold>Backend</bold></p>
+  <p><b>Backend</b></p>
   <li>Java (Jakarta EE 9.1) 👍</li>
   <li>JDBC (Conexion Base de Datos) 🤗</li>
 </ul>
 
 <ul>
-  <p><bold>Base de datos</bold></p>
+  <p><b>Base de datos</b></p>
   <li>MySQL 😎</li>
 </ul>
 
 <ul>
-  <p><bold>Otros y/o Herramientas</bold></p>
+  <p><b>Otros y/o Herramientas</b></p>
   <li>Apache Tomcat (servidor de aplicaciones)</li>
   <li>IntelliJ IDEA (como editor de codigo)</li>
   <li>MySQL WorkBench 6.2 (como editor para la base de datos)</li>
@@ -45,6 +45,6 @@
 
 <h3>Contacto</h3>
 <ul>
-  <li>Autor: Daza Firma Luis Ernesto</li>
-  <li>Correo Electronico: luisernestodazafirma@gmail.com</li>
+  <li><b>Autor:</b> Daza Firma Luis Ernesto</li>
+  <li><b>Correo Electronico:</b> luisernestodazafirma@gmail.com</li>
 </ul>
