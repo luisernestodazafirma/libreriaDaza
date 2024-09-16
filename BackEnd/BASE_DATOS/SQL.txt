@@ -1,0 +1,52 @@
+CREATE DATABASE libroBD;
+USE libroBD;
+
+CREATE TABLE tb_autor(
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nombre VARCHAR(200),
+    nacionalidad VARCHAR(200)
+);
+
+/* Tabla para los libros incluye unión de tablas y establece NULL al eliminar autor */
+CREATE TABLE tb_libro(
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    titulo VARCHAR(200),
+    genero VARCHAR(255),
+    numero_paginas INT,
+    precio DOUBLE,
+    imagen LONGBLOB,
+    id_autor INT,
+    FOREIGN KEY (id_autor) REFERENCES tb_autor (id) ON DELETE SET NULL
+);
+
+/*Tabla para usuarios*/
+
+CREATE TABLE tb_usuario (
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    username VARCHAR(50),
+    pass VARCHAR(50)
+);
+
+/*Algunos inserts para que las tablas no esten vacias*/
+INSERT INTO tb_autor (nombre, nacionalidad) VALUES ('Luis', 'Peruano');
+INSERT INTO tb_autor (nombre, nacionalidad) VALUES ('Nil', 'Chileno');
+INSERT INTO tb_autor (nombre, nacionalidad) VALUES ('Claudio Gallardo', 'Boliviano');
+
+SELECT * FROM tb_autor;
+
+/*Otros insert pero ahora para para la tabla libro*/
+INSERT INTO tb_libro (titulo, genero, numero_paginas, precio, imagen, id_autor)
+VALUES ('Ciencias del fracaso', 'Exito Empresarial', 100, 200.5, '', 1);
+INSERT INTO tb_libro (titulo, genero, numero_paginas, precio, imagen, id_autor)
+VALUES ('De 0 a Heroico', 'Gaming', 100, 200.5, '', 2);
+
+/*Inserts para usuarios :V*/
+
+INSERT INTO tb_usuario (username, pass) VALUES ('admin', 'admin');
+INSERT INTO tb_usuario (username, pass) VALUES ('Ernesto', 'admin');
+
+SELECT * FROM tb_usuario;
+
+SELECT * FROM tb_usuario WHERE username = 'admin' AND pass = 'admin';
+
+SELECT * FROM tb_libro;
